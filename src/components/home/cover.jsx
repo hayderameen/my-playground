@@ -19,29 +19,29 @@ const Cover = () => {
 
         <ul>
           <li>
-            <NavLink className="navigation-item" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="navigation-item" to="/about">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="navigation-item" to="/portfolio">
+            <NavLink
+              className="navigation-item hover-class"
+              style={{ color: "#22031f", fontWeight: "bolder" }}
+              to="/portfolio"
+            >
               Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="navigation-item hover-class"
+              style={{ color: "#12355b" }}
+              to="/about"
+            >
+              About me
             </NavLink>
           </li>
         </ul>
       </nav>
 
       <div className="cover-text">
-        <h1>Building wonderful experiences</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad
-          architecto fugiat!
-        </p>
+        <h1>I'm a Full-Stack Web Developer</h1>
+        <p>and this is my playground</p>
       </div>
     </div>
   );
