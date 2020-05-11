@@ -1,7 +1,7 @@
 #home-cover {
   background: url("../../assets/home/cover/bg.svg") no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 108vh;
 }
 
 .cover-text {
@@ -18,7 +18,7 @@
 
 .cover-text p {
   font-size: 1.5em;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 #left-cover {
@@ -39,6 +39,7 @@ nav {
 }
 
 .logo {
+  padding: 0 10px;
   color: white;
   font-size: 1em;
   transition: font-size 0.5s;
