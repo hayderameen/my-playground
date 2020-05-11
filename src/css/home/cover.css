@@ -1,0 +1,79 @@
+#home-cover {
+  background: url("../../assets/home/cover/bg.svg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.cover-text {
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+.cover-text h1 {
+  font-size: 3em;
+}
+
+.cover-text p {
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+#left-cover {
+  position: absolute;
+  top: 30%;
+  height: 200px;
+}
+
+#right-cover {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 200px;
+}
+
+nav {
+  padding: 50px;
+}
+
+.logo {
+  color: white;
+  font-size: 1em;
+  transition: font-size 0.5s;
+}
+
+.logo:hover {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 150px;
+}
+nav ul li {
+  padding: 0 10px;
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: teal;
+}
+
+.navigation-item {
+  text-decoration: none;
+  transition: font-size 0.5s;
+  font-size: 1.5em;
+}
+.navigation-item:hover {
+  transition: font-size 0.5s;
+  font-size: 1.8em;
+}
