@@ -1,0 +1,15 @@
+#my-skills-cover {
+  height: 100vh;
+  background-color: #2f3c5f;
+  position: relative;
+}
+
+#my-skills-heading {
+  z-index: 2;
+  color: white;
+  font-size: 5.5em;
+  position: absolute;
+  top: 11%;
+  left: 6%;
+  transform: rotate(-24deg);
+}
