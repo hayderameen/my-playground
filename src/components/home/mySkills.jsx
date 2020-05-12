@@ -9,7 +9,6 @@ class MySkills extends Component {
     this.state = {
       showTicker: "",
     };
-    this.myRef = React.createRef();
   }
 
   componentDidMount() {
