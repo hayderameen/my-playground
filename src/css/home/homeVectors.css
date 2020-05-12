@@ -1,0 +1,6 @@
+#picture-cover-vector {
+  position: absolute;
+  width: 1000px;
+  top: 53%;
+  z-index: 1;
+}

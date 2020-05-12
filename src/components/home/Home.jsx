@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cover from "./cover";
+import HomeVectors from "./homeVectors";
 
 class Home extends Component {
   state = {};
@@ -7,7 +8,9 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+        <HomeVectors />
         <Cover />
+
         <br />
         <br />
         <br />
