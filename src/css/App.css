@@ -8,8 +8,19 @@ html {
   color: white;
   font-family: "Raleway";
   background-color: #d4d4d4;
+  scroll-behavior: smooth;
 }
 
 .container {
   width: 100%;
+}
+
+/* Might use these 2 later somewhere else */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.scroll-section {
+  scroll-snap-align: center;
 }

@@ -9,9 +9,11 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <HomeVectors />
-        <Cover />
-        <MySkills />
+        <div>
+          <HomeVectors />
+          <Cover />
+          <MySkills />
+        </div>
       </React.Fragment>
     );
   }

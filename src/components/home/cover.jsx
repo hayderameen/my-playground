@@ -9,11 +9,11 @@ import "../../css/home/cover.css";
 
 const Cover = () => {
   return (
-    <div id="home-cover">
+    <section id="home-cover">
       <img id="profile-picture" src={profile} alt="Muhammad Haider Amin"></img>
       <nav>
         <Link className="logo navigation-item" to="/">
-          Haider's Playground
+          M. Haider Amin
         </Link>
 
         <ul>
@@ -49,7 +49,7 @@ const Cover = () => {
           </span>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
