@@ -1,0 +1,6 @@
+#superpowers-cover {
+  height: 100vh;
+  background-image: linear-gradient(#2f3c5f, #848e70);
+  position: relative;
+  overflow-x: hidden;
+}
