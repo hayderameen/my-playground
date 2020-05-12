@@ -2,6 +2,7 @@
   height: 100vh;
   background-color: #2f3c5f;
   position: relative;
+  overflow-x: hidden;
 }
 
 #my-skills-heading {
@@ -17,8 +18,13 @@
 .ticker {
   height: 15%;
   position: absolute;
-  right: 0;
   display: flex;
+  box-shadow: -7px 6px 4px black;
+}
+
+.show-ticker {
+  transition: right 1.5s ease-in-out;
+  right: 0 !important;
 }
 
 .ticker > h1 {
@@ -31,22 +37,26 @@
   background: url("../../assets/home/myskills/ticker1.svg");
   width: 50%;
   top: 15%;
+  right: -51%;
 }
 
 #ticker2 {
   background: url("../../assets/home/myskills/ticker2.svg");
   width: 60%;
   top: 35%;
+  right: -62%;
   color: black;
 }
 #ticker3 {
   background: url("../../assets/home/myskills/ticker3.svg");
   width: 70%;
   top: 55%;
+  right: -71%;
 }
 #ticker4 {
   background: url("../../assets/home/myskills/ticker4.svg");
   width: 80%;
   top: 75%;
+  right: -83%;
   color: black;
 }
