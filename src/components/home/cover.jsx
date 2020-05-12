@@ -42,7 +42,7 @@ class Cover extends Component {
                 this.setState({ showText: "hideText" });
                 setTimeout(() => {
                   this.setState({
-                    fullStack: "....alright...",
+                    fullStack: "....alright....",
                     showText: "showText",
                   });
                   setTimeout(() => {

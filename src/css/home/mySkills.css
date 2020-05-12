@@ -13,3 +13,40 @@
   left: 6%;
   transform: rotate(-24deg);
 }
+
+.ticker {
+  height: 15%;
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.ticker > h1 {
+  align-items: center;
+  margin-left: 15px;
+  font-size: 3em;
+}
+
+#ticker1 {
+  background: url("../../assets/home/myskills/ticker1.svg");
+  width: 50%;
+  top: 15%;
+}
+
+#ticker2 {
+  background: url("../../assets/home/myskills/ticker2.svg");
+  width: 60%;
+  top: 35%;
+  color: black;
+}
+#ticker3 {
+  background: url("../../assets/home/myskills/ticker3.svg");
+  width: 70%;
+  top: 55%;
+}
+#ticker4 {
+  background: url("../../assets/home/myskills/ticker4.svg");
+  width: 80%;
+  top: 75%;
+  color: black;
+}
