@@ -31,6 +31,13 @@ class SuperPowers extends Component {
           <div id="power-right"></div>
         </div>
         <div id="superhero-figure" className={this.state.flyhero}></div>
+        <div id="superPowers-texts">
+          <div className="powers-row">
+            <div id="javascript">
+              <div></div>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
