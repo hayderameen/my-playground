@@ -87,7 +87,7 @@
   width: 70%;
   height: 60%;
   margin-left: 25%;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .powers-row {
@@ -208,4 +208,15 @@
   height: 88%;
   margin-left: -32px;
   transform: rotate(-4deg);
+}
+
+.hide-power {
+  width: 0% !important;
+  height: 0% !important;
+}
+
+.show-power {
+  transition: height 1s, width 1s;
+  width: 25% !important;
+  height: 100% !important;
 }
