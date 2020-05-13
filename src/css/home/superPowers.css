@@ -131,3 +131,42 @@
   margin-left: 12px;
   transform: rotate(4deg);
 }
+
+#webpack {
+  background: url("../../assets/home/superpowers/blueComicBackground.svg")
+    no-repeat;
+  width: 25%;
+  height: 100%;
+}
+#webpack > div {
+  background: url("../../assets/home/superpowers/webpacktext.svg") no-repeat;
+  height: 65%;
+  margin-top: 15px;
+  margin-left: -17px;
+}
+
+#react {
+  background: url("../../assets/home/superpowers/yellowComicBackground.svg")
+    no-repeat;
+  width: 25%;
+  height: 100%;
+}
+#react > div {
+  background: url("../../assets/home/superpowers/reacttext.svg") no-repeat;
+  height: 148%;
+  margin-top: -31px;
+  margin-left: -21px;
+}
+
+#node {
+  background: url("../../assets/home/superpowers/redComicBackground.svg")
+    no-repeat;
+  width: 25%;
+  height: 100%;
+}
+#node > div {
+  background: url("../../assets/home/superpowers/nodetext.svg") no-repeat;
+  height: 100%;
+  margin-left: -14px;
+  transform: rotate(3deg);
+}

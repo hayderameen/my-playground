@@ -43,6 +43,18 @@ class SuperPowers extends Component {
               <div></div>
             </div>
           </div>
+
+          <div className="powers-row">
+            <div id="webpack">
+              <div></div>
+            </div>
+            <div id="react">
+              <div></div>
+            </div>
+            <div id="node">
+              <div></div>
+            </div>
+          </div>
         </div>
       </section>
     );
