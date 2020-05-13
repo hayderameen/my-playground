@@ -84,7 +84,7 @@ class Cover extends Component {
           <ul>
             <li>
               <NavLink
-                className="navigation-item hover-class"
+                className="navigation-item"
                 style={{ color: "#22031f", fontWeight: "bolder" }}
                 to="/portfolio"
               >
@@ -93,7 +93,7 @@ class Cover extends Component {
             </li>
             <li>
               <NavLink
-                className="navigation-item hover-class"
+                className="navigation-item"
                 style={{ color: "#12355b" }}
                 to="/about"
               >
