@@ -21,11 +21,14 @@
   display: flex;
   box-shadow: -7px 6px 4px black;
   z-index: 2;
+  transform: translateX(101%);
 }
 
 .show-ticker {
-  transition: right 1.5s ease-in-out;
-  right: 0 !important;
+  /* transition: right 1.5s ease-in-out;
+  right: 0 !important; */
+  transition: transform 1.5s ease-in-out;
+  transform: translateX(0%);
 }
 
 .ticker > h1 {
@@ -38,26 +41,29 @@
   background: url("../../assets/home/myskills/ticker1.svg");
   width: 50%;
   top: 15%;
-  right: -51%;
+  right: 0;
 }
 
 #ticker2 {
   background: url("../../assets/home/myskills/ticker2.svg");
   width: 60%;
   top: 35%;
-  right: -62%;
+  right: 0;
   color: black;
+  transition-delay: 400ms;
 }
 #ticker3 {
   background: url("../../assets/home/myskills/ticker3.svg");
   width: 70%;
   top: 55%;
-  right: -71%;
+  right: 0;
+  transition-delay: 800ms;
 }
 #ticker4 {
   background: url("../../assets/home/myskills/ticker4.svg");
   width: 80%;
   top: 75%;
-  right: -83%;
+  right: 0;
   color: black;
+  transition-delay: 1200ms;
 }

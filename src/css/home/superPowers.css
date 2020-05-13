@@ -38,7 +38,7 @@
 }
 
 .show-powers {
-  animation: pop-out 2s;
+  animation: pop-out 1.5s;
 }
 
 @keyframes pop-out {
@@ -73,14 +73,28 @@
   background: url("../../assets/home/superpowers/superheroFigure.svg") no-repeat;
   width: 400px;
   height: 400px;
-  top: 40%;
-  left: -22%;
+  top: 20%;
+  left: 1%;
+  transform: translate(-105%, 50%);
 }
 
 .fly-hero-in {
-  transition: top 2s ease-in-out, left 2s ease-in-out;
-  top: 20% !important;
-  left: 1% !important;
+  transition: transform 2s ease-in-out;
+  transform: translate(0%, 20%) !important;
+  animation: flying 2.3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes flying {
+  0% {
+    transform: translate(0%, 20%);
+  }
+  50% {
+    transform: translate(0%, 23%);
+  }
+  100% {
+    transform: translate(0%, 20%);
+  }
 }
 
 #superPowers-texts {
@@ -102,6 +116,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 500ms;
 }
 #javascript > div {
   background: url("../../assets/home/superpowers/jstext.svg") no-repeat;
@@ -113,6 +128,7 @@
     no-repeat;
   width: 25%;
   height: 116%;
+  transition-delay: 800ms;
 }
 #html5 > div {
   background: url("../../assets/home/superpowers/html5text.svg") no-repeat;
@@ -124,6 +140,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 1100ms;
 }
 #css > div {
   background: url("../../assets/home/superpowers/csstext.svg") no-repeat;
@@ -137,6 +154,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 1500ms;
 }
 #webpack > div {
   background: url("../../assets/home/superpowers/webpacktext.svg") no-repeat;
@@ -150,6 +168,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 1800ms;
 }
 #react > div {
   background: url("../../assets/home/superpowers/reacttext.svg") no-repeat;
@@ -163,6 +182,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 2100ms;
 }
 #node > div {
   background: url("../../assets/home/superpowers/nodetext.svg") no-repeat;
@@ -176,6 +196,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 2400ms;
 }
 #jquery > div {
   background: url("../../assets/home/superpowers/jquerytext.svg") no-repeat;
@@ -189,6 +210,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 2500ms;
 }
 #sass > div {
   background: url("../../assets/home/superpowers/sasstext.svg") no-repeat;
@@ -202,6 +224,7 @@
     no-repeat;
   width: 25%;
   height: 100%;
+  transition-delay: 2800ms;
 }
 #socket > div {
   background: url("../../assets/home/superpowers/sockettext.svg") no-repeat;
@@ -211,12 +234,10 @@
 }
 
 .hide-power {
-  width: 0% !important;
-  height: 0% !important;
+  transform: scale(0) !important;
 }
 
 .show-power {
-  transition: height 1s, width 1s;
-  width: 25% !important;
-  height: 100% !important;
+  transition: transform 1s;
+  transform: scale(1) !important;
 }
