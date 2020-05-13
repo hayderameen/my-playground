@@ -55,6 +55,18 @@ class SuperPowers extends Component {
               <div></div>
             </div>
           </div>
+
+          <div className="powers-row">
+            <div id="jquery">
+              <div></div>
+            </div>
+            <div id="sass">
+              <div></div>
+            </div>
+            <div id="socket">
+              <div></div>
+            </div>
+          </div>
         </div>
       </section>
     );
