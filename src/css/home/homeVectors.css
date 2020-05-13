@@ -4,3 +4,14 @@
   top: 52.3%;
   z-index: 1;
 }
+
+#superpowers-line-right {
+  background: url("../../assets/home/fullPage/superpowersLineRight.svg")
+    no-repeat;
+  position: absolute;
+  width: 400px;
+  height: 1000px;
+  top: 172%;
+  right: 0;
+  z-index: 1;
+}

@@ -20,6 +20,7 @@
   position: absolute;
   display: flex;
   box-shadow: -7px 6px 4px black;
+  z-index: 2;
 }
 
 .show-ticker {

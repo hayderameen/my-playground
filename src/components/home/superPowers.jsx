@@ -6,7 +6,7 @@ import "../../css/home/superPowers.css";
 class SuperPowers extends Component {
   constructor(props) {
     super(props);
-    this.state = { showPowers: "hide-powers" };
+    this.state = { showPowers: "hide-powers", flyhero: "" };
   }
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class SuperPowers extends Component {
     if (scrollY >= 1080) {
       // My SuperPowers section is now showing
       // Lets display its animations here
-      this.setState({ showPowers: "show-powers" });
+      this.setState({ showPowers: "show-powers", flyhero: "fly-hero-in" });
     }
   };
 
@@ -30,6 +30,7 @@ class SuperPowers extends Component {
           <h1 id="power-text">MY SUPERPOWERS</h1>
           <div id="power-right"></div>
         </div>
+        <div id="superhero-figure" className={this.state.flyhero}></div>
       </section>
     );
   }

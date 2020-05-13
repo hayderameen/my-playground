@@ -9,7 +9,7 @@
   display: flex;
   width: 60%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
   height: 20%;
 }
 
@@ -66,4 +66,19 @@
     transform: rotate(0deg);
     opacity: 1;
   }
+}
+
+#superhero-figure {
+  position: absolute;
+  background: url("../../assets/home/superpowers/superheroFigure.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  top: 40%;
+  left: -22%;
+}
+
+.fly-hero-in {
+  transition: top 2s ease-in-out, left 2s ease-in-out;
+  top: 20% !important;
+  left: 1% !important;
 }
