@@ -43,37 +43,37 @@ class SuperPowers extends Component {
         <div id="superPowers-texts">
           <div className="powers-row">
             <div id="javascript" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="html5" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="css" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
           </div>
 
           <div className="powers-row">
             <div id="webpack" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="react" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="node" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
           </div>
 
           <div className="powers-row">
             <div id="jquery" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="sass" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
             <div id="socket" className={showPowerIcon}>
-              <div></div>
+              <div className="powers-texts"></div>
             </div>
           </div>
         </div>

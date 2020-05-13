@@ -234,10 +234,19 @@
 }
 
 .hide-power {
-  transform: scale(0) !important;
+  transform: scale(0);
 }
 
 .show-power {
   transition: transform 1s;
-  transform: scale(1) !important;
+  transform: scale(1);
+}
+
+.powers-texts {
+  transition: transform 1s;
+  transform: scale(1);
+}
+.powers-texts:hover {
+  transition: transform 1s;
+  transform: scale(1.5) rotate(-10deg) !important;
 }
