@@ -36,6 +36,12 @@ class SuperPowers extends Component {
             <div id="javascript">
               <div></div>
             </div>
+            <div id="html5">
+              <div></div>
+            </div>
+            <div id="css">
+              <div></div>
+            </div>
           </div>
         </div>
       </section>
