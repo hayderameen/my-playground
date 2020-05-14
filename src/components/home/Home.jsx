@@ -3,6 +3,7 @@ import Cover from "./cover";
 import HomeVectors from "./homeVectors";
 import MySkills from "./mySkills";
 import SuperPowers from "./superPowers";
+import Portfolio from "./portfolio";
 
 class Home extends Component {
   state = {};
@@ -15,6 +16,7 @@ class Home extends Component {
           <Cover />
           <MySkills />
           <SuperPowers />
+          <Portfolio />
         </div>
       </React.Fragment>
     );
