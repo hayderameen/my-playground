@@ -1,5 +1,19 @@
 import React, { Component } from "react";
 
+// Importing assets
+import powersRightMySQL from "../../assets/home/superpowers/powersRightMySQL.svg";
+import powersRightHeroku from "../../assets/home/superpowers/powersRightHeroku.svg";
+import powersRightVSCode from "../../assets/home/superpowers/powersRightVSCode.svg";
+import powersRightMongo from "../../assets/home/superpowers/powersRightMongo.svg";
+import powersRightWP from "../../assets/home/superpowers/powersRightWP.svg";
+import powersRightgit from "../../assets/home/superpowers/powersRightgit.svg";
+import powersRightRedux from "../../assets/home/superpowers/powersRightRedux.svg";
+import powersRightFirebase from "../../assets/home/superpowers/powersRightFirebase.svg";
+import powersRightAPI from "../../assets/home/superpowers/powersRightAPI.svg";
+import powersRightXD from "../../assets/home/superpowers/powersRightXD.svg";
+import powersRightAI from "../../assets/home/superpowers/powersRightAI.svg";
+import powersRightEnd from "../../assets/home/superpowers/powersRightEnd.svg";
+
 // Importing CSS
 import "../../css/home/superPowers.css";
 
@@ -34,6 +48,68 @@ class SuperPowers extends Component {
     const { showPowers, flyhero, showPowerIcon } = this.state;
     return (
       <section id="superpowers-cover" onScroll={this.onScroll}>
+        <div id="more-powers">
+          <img
+            id="more-powers-2"
+            src={powersRightMySQL}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-3"
+            src={powersRightHeroku}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-4"
+            src={powersRightVSCode}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-5"
+            src={powersRightMongo}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-6"
+            src={powersRightWP}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-7"
+            src={powersRightgit}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-8"
+            src={powersRightRedux}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-9"
+            src={powersRightFirebase}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-10"
+            src={powersRightAPI}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-11"
+            src={powersRightXD}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-12"
+            src={powersRightAI}
+            className={showPowerIcon}
+          ></img>
+          <img
+            id="more-powers-13"
+            src={powersRightEnd}
+            className={showPowerIcon}
+          ></img>
+        </div>
         <div id="superpower-heading" className={showPowers}>
           <div id="power-left"></div>
           <h1 id="power-text">MY SUPERPOWERS</h1>
