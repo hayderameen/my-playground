@@ -1,6 +1,29 @@
 #portfolio {
   height: 100vh;
-  background-image: linear-gradient(#848e70, #fff);
+  background-color: white;
+  color: black;
   position: relative;
   overflow-x: hidden;
+}
+
+#portfolio-heading {
+  width: 100vw;
+  height: 20vh;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #848e70;
+  color: white;
+}
+
+#portfolio-heading > h1 {
+  font-size: 4em;
+}
+
+#portfolio-slider {
+  width: 100vw;
+  height: 80vh;
+  margin-top: -2.15vh;
+  background-color: pink; /* Just for testing. remove later */
 }

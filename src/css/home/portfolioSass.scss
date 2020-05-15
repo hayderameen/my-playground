@@ -1,0 +1,40 @@
+.arrow {
+  position: absolute;
+  top: 55vh;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+
+  svg {
+    width: 5rem;
+    stroke: teal;
+    fill: none;
+    stroke-width: 2px;
+  }
+  path {
+    transition: 0.5s;
+    d: path("M0 3 L27 15 L0 27");
+  }
+
+  &:hover path {
+    transition: 0.5s;
+    d: path("M0 6 L27 15 L0 24");
+  }
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.9);
+  }
+}
+
+#arrow-left {
+  left: 1vw;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+#arrow-right {
+  left: 94vw;
+}

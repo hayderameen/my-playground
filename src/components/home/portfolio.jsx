@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import PortfolioSlide from "../common/portfolioSlide";
 
 // Importing CSS
 import "../../css/home/portfolio.css";
-import ClipPath from "../common/clipPath";
+import "../../css/home/portfolioSass.scss";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -12,11 +13,24 @@ class Portfolio extends Component {
   render() {
     return (
       <section id="portfolio">
-        <h1>Portfolio</h1>
-        <h1>Clip Path for showing parts of projects</h1>
-        <h1>Inline SVG for arrows left and right</h1>
-        <h1>Background board for showing overall</h1>
-        <ClipPath />
+        <div id="portfolio-heading">
+          <h1>Portfolio &amp; My Personal Projects</h1>
+        </div>
+        <div id="portfolio-slider">
+          <PortfolioSlide />
+        </div>
+
+        {/* These are inline SVGs for left and right buttons */}
+        <div id="arrow-left" className="arrow">
+          <svg viewBox="0 0 30 30">
+            <path></path>
+          </svg>
+        </div>
+        <div id="arrow-right" className="arrow">
+          <svg viewBox="0 0 30 30">
+            <path></path>
+          </svg>
+        </div>
       </section>
     );
   }
