@@ -8,7 +8,7 @@
 
 #portfolio-heading {
   width: 100vw;
-  height: 20vh;
+  height: 16vh;
 
   display: grid;
   justify-items: center;
@@ -24,6 +24,6 @@
 #portfolio-slider {
   width: 100vw;
   height: 80vh;
-  margin-top: -2.15vh;
+  /* margin-top: -4.15vh; */
   background-color: pink; /* Just for testing. remove later */
 }

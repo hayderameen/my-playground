@@ -1,26 +1,52 @@
 import React, { Component } from "react";
 import ClipPath from "../../components/common/clipPath";
 
-class PortfolioSlide extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <React.Fragment>
-        <h1>Inline SVG for arrows left and right</h1>
-        <h1>Background board for showing overall</h1>
-        <ClipPath
-          data={{
-            type: "stack",
-            heading: "stack",
-            paragraph: "This is sample para for tech stack!",
-          }}
-        />
-      </React.Fragment>
-    );
-  }
-}
+// Importing CSS
+import "../../css/common/portfolioSlide.css";
+
+const PortfolioSlide = (props) => {
+  const { title, backgroundImage, info } = props.data;
+  const { about, stack, features, moreInfo } = info;
+  return (
+    <div className="slide">
+      <h1 className="slide-title">{title}</h1>
+      <div id="img-data-container">
+        <div id="img-part">
+          <img src={backgroundImage}></img>
+        </div>
+        <div id="data-part">
+          <ClipPath
+            data={{
+              type: "about",
+              heading: "About",
+              paragraph: about,
+            }}
+          />
+          <ClipPath
+            data={{
+              type: "stack",
+              heading: "Stack",
+              paragraph: stack,
+            }}
+          />
+          <ClipPath
+            data={{
+              type: "features",
+              heading: "Features",
+              paragraph: features,
+            }}
+          />
+          <ClipPath
+            data={{
+              type: "more-info",
+              heading: "More Info",
+              paragraph: moreInfo,
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default PortfolioSlide;

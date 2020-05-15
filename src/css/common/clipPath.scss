@@ -5,6 +5,7 @@
   height: 300px;
   overflow-y: hidden;
   clip-path: circle(15% at 15% 20%);
+  opacity: 1;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 
@@ -26,10 +27,12 @@
 
 .about {
   background-color: #213c4e;
+  z-index: 5;
 }
 
 .stack {
   background-color: #2a9d8f;
+  z-index: 4;
 
   h1 {
     padding-left: 28px;
@@ -38,6 +41,7 @@
 
 .features {
   background-color: #e63946;
+  z-index: 3;
 
   h1 {
     padding-left: 13px;
@@ -46,6 +50,7 @@
 
 .more-info {
   background-color: #fb5607;
+  z-index: 2;
 
   h1 {
     padding-left: 8px;
