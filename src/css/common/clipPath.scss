@@ -1,0 +1,51 @@
+.clipPath {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  overflow-y: hidden;
+  clip-path: circle(15% at 15% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    clip-path: circle(100%);
+  }
+  h1 {
+    padding-top: 24px;
+    padding-left: 22px;
+  }
+
+  div {
+    padding-top: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.about {
+  background-color: #213c4e;
+}
+
+.stack {
+  background-color: #2a9d8f;
+
+  h1 {
+    padding-left: 28px;
+  }
+}
+
+.features {
+  background-color: #e63946;
+
+  h1 {
+    padding-left: 13px;
+  }
+}
+
+.more-info {
+  background-color: #fb5607;
+
+  h1 {
+    padding-left: 8px;
+  }
+}

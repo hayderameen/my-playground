@@ -1,6 +1,6 @@
 #portfolio {
   height: 100vh;
-  background-image: linear-gradient(#848e70, #e9c46a);
+  background-image: linear-gradient(#848e70, #fff);
   position: relative;
   overflow-x: hidden;
 }
