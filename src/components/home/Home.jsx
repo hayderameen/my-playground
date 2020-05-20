@@ -4,6 +4,7 @@ import HomeVectors from "./homeVectors";
 import MySkills from "./mySkills";
 import SuperPowers from "./superPowers";
 import Portfolio from "./portfolio";
+import Footer from "./footer";
 
 class Home extends Component {
   state = {};
@@ -11,13 +12,12 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <HomeVectors />
-          <Cover />
-          <MySkills />
-          <SuperPowers />
-          <Portfolio />
-        </div>
+        <HomeVectors />
+        <Cover />
+        <MySkills />
+        <SuperPowers />
+        <Portfolio />
+        <Footer />
       </React.Fragment>
     );
   }
