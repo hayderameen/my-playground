@@ -1,18 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import ClipPath from "../../components/common/clipPath";
 
 // Importing CSS
 import "../../css/common/portfolioSlide.css";
 
 const PortfolioSlide = (props) => {
+  const { animation, transitionEnd } = props;
   const { title, backgroundImage, info } = props.data;
   const { about, stack, features, moreInfo } = info;
   return (
-    <div className="slide">
+    <div className={`slide ${animation}`} onTransitionEnd={transitionEnd}>
       <h1 className="slide-title">{title}</h1>
       <div id="img-data-container">
         <div id="img-part">
-          <img src={backgroundImage}></img>
+          <img src={backgroundImage} alt={title}></img>
         </div>
         <div id="data-part">
           <ClipPath

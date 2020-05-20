@@ -53,61 +53,73 @@ class SuperPowers extends Component {
             id="more-powers-2"
             src={powersRightMySQL}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-3"
             src={powersRightHeroku}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-4"
             src={powersRightVSCode}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-5"
             src={powersRightMongo}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-6"
             src={powersRightWP}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-7"
             src={powersRightgit}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-8"
             src={powersRightRedux}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-9"
             src={powersRightFirebase}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-10"
             src={powersRightAPI}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-11"
             src={powersRightXD}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-12"
             src={powersRightAI}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
           <img
             id="more-powers-13"
             src={powersRightEnd}
             className={showPowerIcon}
+            alt="more-powers"
           ></img>
         </div>
         <div id="superpower-heading" className={showPowers}>

@@ -1,14 +1,19 @@
+.slide {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: scale(0.8);
+  box-shadow: 0px 0px 15px black;
+  transform: scale(0);
+}
+
 .slide-title {
   width: 50%;
   margin: 35px auto;
   text-align: center;
   font-size: 3em;
-}
-
-.slide {
-  background-color: white;
-  width: 100%;
-  height: 100%;
+  padding-top: 5px;
 }
 
 #img-data-container {
@@ -21,7 +26,7 @@
   flex: 60%;
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-items: end;
 }
 #img-part > img {
   width: 600px;
@@ -49,4 +54,17 @@
 #data-part div:nth-child(4) {
   position: absolute;
   top: 59%;
+}
+
+/* These 2 are for next slide animations */
+.scale-down {
+  transition: transform 0.7s ease-in-out, box-shadow 1s ease-in-out;
+  transform: scale(0);
+  box-shadow: 0px 0px 25px black;
+}
+
+.scale-up {
+  transition: transform 0.7s ease-in-out, box-shadow 1s ease-in-out;
+  transform: scale(0.8);
+  box-shadow: 0px 0px 15px black;
 }
