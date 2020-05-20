@@ -7,7 +7,7 @@ import "../../css/home/portfolio.scss";
 
 // Importing project backgrounds
 import ultimateESports from "../../assets/home/portfolio/ultimateesports.png";
-import zabta from "../../assets/home/portfolio/zabta.svg";
+import zabta from "../../assets/home/portfolio/zabta.png";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -16,12 +16,9 @@ class Portfolio extends Component {
       slides: [],
       currentSlide: {
         data: {},
-        show: "",
         animation: "",
-        position: "",
       },
       currentSlideCount: 0,
-      nextSlide: { data: {}, show: "", animation: "", position: "" },
     };
   }
 
@@ -108,7 +105,6 @@ class Portfolio extends Component {
 
   onScroll = () => {
     const scrollY = window.scrollY;
-    console.log("heres");
     if (scrollY >= 1580) {
       // My Portfolio section is now showing
       // Lets display its animations here
