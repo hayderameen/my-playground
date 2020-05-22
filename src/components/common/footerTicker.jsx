@@ -7,7 +7,7 @@ const FooterTicker = () => {
   return (
     <div className="footer-ticker">
       <span>
-        M. Haider Amin <span className="copyright">&copy;2020</span>
+        Muhammad Haider Amin <span className="copyright">&copy;2020</span>
       </span>
     </div>
   );
