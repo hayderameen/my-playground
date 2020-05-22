@@ -1,7 +1,7 @@
 .contact-form-inner {
   width: 60%;
   margin: auto;
-  font-family: "Raleway";
+  font-family: "Raleway" !important;
 
   .form-input {
     // contains common properties
@@ -13,7 +13,7 @@
     outline: none;
     display: block;
     margin: 0.4rem auto;
-    font-size: 1.1rem;
+
     transition: background-color 0.5s ease;
 
     &:hover {
@@ -30,6 +30,7 @@
     width: 100%;
     height: 35px;
     padding-left: 5px;
+    font-size: 1.1rem;
 
     &::placeholder {
       color: white;
