@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         <div className="contact-form">
           <h1 className="heading-footer">
-            CONTACT ME <span>send me your queries</span>
+            CONTACT ME <span>&amp; send your queries</span>
           </h1>
           <ContactForm />
         </div>
