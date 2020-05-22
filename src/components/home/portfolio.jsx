@@ -57,7 +57,7 @@ class Portfolio extends Component {
       slides: slides,
       currentSlide: { data: slides[0] },
       currentSlideCount: 0,
-      animation: "",
+      animation: "scale-down",
     });
   }
 

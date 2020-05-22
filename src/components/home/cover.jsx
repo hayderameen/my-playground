@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 // Importing assets
 import profile from "../../assets/home/cover/profile.png";
@@ -83,22 +84,52 @@ class Cover extends Component {
 
           <ul>
             <li>
-              <NavLink
-                className="navigation-item"
-                style={{ color: "#22031f", fontWeight: "bolder" }}
-                to="/portfolio"
-              >
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
+              <Link
                 className="navigation-item"
                 style={{ color: "#12355b" }}
-                to="/about"
+                to="my-skills-cover"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
-                About me
-              </NavLink>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navigation-item"
+                style={{ color: "#22031f" }}
+                to="superpowers-cover"
+                spy={true}
+                smooth={true}
+                duration={600}
+              >
+                Tools
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navigation-item"
+                style={{ color: "#22031f" }}
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={700}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navigation-item"
+                style={{ color: "#22031f", fontWeight: "bolder" }}
+                to="footer"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
