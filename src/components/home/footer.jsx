@@ -1,6 +1,7 @@
 import React from "react";
 import SocialIcon from "../common/socialIcon";
 import ContactForm from "../common/contactForm";
+import FooterTicker from "../common/footerTicker";
 
 // Importing CSS
 import "../../css/home/footer.scss";
@@ -52,6 +53,7 @@ const Footer = () => {
           <ContactForm />
         </div>
       </div>
+      <FooterTicker />
     </section>
   );
 };

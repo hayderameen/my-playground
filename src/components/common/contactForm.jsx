@@ -25,7 +25,8 @@ class ContactForm extends Component {
     if (this.validateInput().error) {
       alert("Information missing");
     } else {
-      alert("Form Submitted (Fake form, for now)");
+      alert("Form Submitted (Fake form, for now)"); // Make a toast or some other notification here later on
+      this.setState({ name: "", email: "", message: "" });
     }
   };
 
