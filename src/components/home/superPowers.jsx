@@ -24,6 +24,7 @@ class SuperPowers extends Component {
       showPowers: "hide-powers",
       flyhero: "",
       showPowerIcon: "hide-power",
+      popout: "no", // Updated via props from home scroller or nav scroller
     };
   }
 
@@ -43,6 +44,18 @@ class SuperPowers extends Component {
       });
     }
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    const { popout } = this.state;
+    if (popout !== "yes" && this.props.popout === "yes") {
+      this.setState({
+        popout: "yes",
+        showPowers: "show-powers",
+        flyhero: "fly-hero-in",
+        showPowerIcon: "show-power",
+      });
+    }
+  }
 
   render() {
     const { showPowers, flyhero, showPowerIcon } = this.state;

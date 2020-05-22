@@ -8,7 +8,16 @@ import Portfolio from "./portfolio";
 import Footer from "./footer";
 
 class Home extends Component {
-  state = { currentSection: 0 };
+  state = {
+    currentSection: 0,
+    popoutSections: {
+      cover1: "no",
+      MySkills1: "no",
+      SuperPowers1: "no",
+      Portfolio1: "no",
+      Footer1: "no",
+    },
+  };
 
   section = ["cover", "MySkills", "SuperPowers", "Portfolio", "Footer"];
 
@@ -25,8 +34,13 @@ class Home extends Component {
         smooth: "linear",
       });
 
-      // Update state for next move
-      this.setState({ currentSection: currentSection - 1 });
+      // Update state for next move and sending popout signal
+      let temp = { ...this.state.popoutSections };
+      temp[this.section[currentSection - 1] + "1"] = "yes";
+      this.setState({
+        currentSection: currentSection - 1,
+        popoutSections: temp,
+      });
     } else {
       scroller.scrollTo(this.section[0], {
         duration: 400,
@@ -40,11 +54,16 @@ class Home extends Component {
       // The scrolling animation here
       scroller.scrollTo(this.section[currentSection + 1], {
         duration: 500,
-        smooth: true,
+        smooth: "linear",
       });
 
-      // Update state for next move
-      this.setState({ currentSection: currentSection + 1 });
+      // Update state for next move and sending popout signal
+      let temp = { ...this.state.popoutSections };
+      temp[this.section[currentSection + 1] + "1"] = "yes";
+      this.setState({
+        currentSection: currentSection + 1,
+        popoutSections: temp,
+      });
     } else {
       scroller.scrollTo(this.section[this.section.length - 1], {
         duration: 400,
@@ -66,8 +85,6 @@ class Home extends Component {
     const { currentSection } = this.state;
     const { wheelDeltaY } = e;
 
-    console.log(e);
-
     // Values above 100 to avoid scrolling of trackpads
     if (wheelDeltaY < -100) {
       this.scrollDown(currentSection);
@@ -77,23 +94,31 @@ class Home extends Component {
   };
 
   render() {
+    const { popoutSections } = this.state;
+    const {
+      cover1,
+      MySkills1,
+      SuperPowers1,
+      Portfolio1,
+      Footer1,
+    } = popoutSections;
     return (
       <React.Fragment>
         <HomeVectors />
         <Element name="cover">
-          <Cover />
+          <Cover popout={cover1} />
         </Element>
         <Element name="MySkills">
-          <MySkills />
+          <MySkills popout={MySkills1} />
         </Element>
         <Element name="SuperPowers">
-          <SuperPowers />
+          <SuperPowers popout={SuperPowers1} />
         </Element>
         <Element name="Portfolio">
-          <Portfolio />
+          <Portfolio popout={Portfolio1} />
         </Element>
         <Element name="Footer">
-          <Footer />
+          <Footer popout={Footer1} />
         </Element>
       </React.Fragment>
     );

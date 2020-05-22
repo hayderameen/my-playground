@@ -9,7 +9,7 @@ import "../../css/home/footer.scss";
 class Footer extends Component {
   constructor(props) {
     super(props);
-    this.state = { animation: "" };
+    this.state = { animation: "", popout: "no" };
   }
 
   componentDidMount() {
@@ -28,6 +28,16 @@ class Footer extends Component {
       });
     }
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    const { popout } = this.state;
+    if (popout !== "yes" && this.props.popout === "yes") {
+      this.setState({
+        popout: "yes",
+        animation: "pop-in",
+      });
+    }
+  }
 
   render() {
     return (

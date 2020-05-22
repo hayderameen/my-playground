@@ -19,6 +19,7 @@ class Portfolio extends Component {
         animation: "",
       },
       currentSlideCount: 0,
+      popout: "no",
     };
   }
 
@@ -61,6 +62,24 @@ class Portfolio extends Component {
     });
   }
 
+  onScroll = () => {
+    const scrollY = window.scrollY;
+    if (scrollY >= 2036) {
+      // My Portfolio section is now showing
+      // Lets display its animations here
+      this.setState({
+        animation: "scale-up",
+      });
+    }
+  };
+
+  componentDidUpdate(prevProps, prevState) {
+    const { popout } = this.state;
+    if (popout !== "yes" && this.props.popout === "yes") {
+      this.setState({ popout: "yes", animation: "scale-up" });
+    }
+  }
+
   prevSlide = () => {
     const { slides, currentSlideCount } = this.state;
     if (currentSlideCount > 0) {
@@ -101,17 +120,6 @@ class Portfolio extends Component {
       },
       animation: "scale-up",
     });
-  };
-
-  onScroll = () => {
-    const scrollY = window.scrollY;
-    if (scrollY >= 1936) {
-      // My Portfolio section is now showing
-      // Lets display its animations here
-      this.setState({
-        animation: "scale-up",
-      });
-    }
   };
 
   render() {

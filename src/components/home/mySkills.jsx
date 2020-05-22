@@ -8,6 +8,7 @@ class MySkills extends Component {
     super(props);
     this.state = {
       showTicker: "",
+      popout: "no", // Updated via props from home scroller or nav scroller
     };
   }
 
@@ -23,6 +24,13 @@ class MySkills extends Component {
       this.setState({ showTicker: "show-ticker" });
     }
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    const { popout } = this.state;
+    if (popout !== "yes" && this.props.popout === "yes") {
+      this.setState({ popout: "yes", showTicker: "show-ticker" });
+    }
+  }
 
   render() {
     return (
