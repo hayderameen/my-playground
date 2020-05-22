@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap");
 
 #footer {
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   background: url("../../assets/home/footer/footer.svg") no-repeat;
   background-size: cover;
@@ -25,7 +26,6 @@
 }
 
 .heading-footer {
-  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   position: relative;
 

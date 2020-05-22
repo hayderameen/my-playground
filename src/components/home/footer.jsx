@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcon from "../common/socialIcon";
+import ContactForm from "../common/contactForm";
 
 // Importing CSS
 import "../../css/home/footer.scss";
@@ -48,6 +49,7 @@ const Footer = () => {
           <h1 className="heading-footer">
             CONTACT ME <span>send me your queries</span>
           </h1>
+          <ContactForm />
         </div>
       </div>
     </section>
