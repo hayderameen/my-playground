@@ -33,7 +33,7 @@ class SuperPowers extends Component {
 
   onScroll = () => {
     const scrollY = window.scrollY;
-    if (scrollY >= 1080) {
+    if (scrollY >= 1277) {
       // My SuperPowers section is now showing
       // Lets display its animations here
       this.setState({

@@ -17,7 +17,7 @@ class MySkills extends Component {
 
   onScroll = () => {
     const scrollY = window.scrollY;
-    if (scrollY >= 580) {
+    if (scrollY >= 877) {
       // My Skills page is now showing
       // Lets display its animations here
       this.setState({ showTicker: "show-ticker" });

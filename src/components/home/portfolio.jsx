@@ -105,7 +105,7 @@ class Portfolio extends Component {
 
   onScroll = () => {
     const scrollY = window.scrollY;
-    if (scrollY >= 1580) {
+    if (scrollY >= 1936) {
       // My Portfolio section is now showing
       // Lets display its animations here
       this.setState({

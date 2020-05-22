@@ -20,7 +20,7 @@ class Footer extends Component {
 
   onScroll = () => {
     const scrollY = window.scrollY;
-    if (scrollY >= 2080) {
+    if (scrollY >= 3280) {
       // Footer section is now showing
       // Lets display its animations here
       this.setState({
