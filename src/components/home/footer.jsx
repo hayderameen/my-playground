@@ -9,8 +9,8 @@ const Footer = () => {
     <section id="footer">
       <div id="contact-form-footer">
         <div className="social-icons">
-          <h1 id="social-icons-heading-footer">
-            My Socials <span>try hovering on 'em</span>
+          <h1 className="heading-footer">
+            MY SOCIALS<span>try hovering on them</span>
           </h1>
           <SocialIcon
             customClass="fb"
@@ -43,6 +43,11 @@ const Footer = () => {
               window.open("https://github.com/hayderameen/", "_blank");
             }}
           />
+        </div>
+        <div className="contact-form">
+          <h1 className="heading-footer">
+            CONTACT ME <span>send me your queries</span>
+          </h1>
         </div>
       </div>
     </section>
