@@ -93,7 +93,7 @@ class Portfolio extends Component {
 
   transitionEndDetector = (e) => {
     // Send its reference to portfolioSlide and then update the slide here accordingly
-    console.log("Transition ended", e.currentTarget);
+
     const { slides, currentSlideCount } = this.state;
     this.setState({
       currentSlide: {

@@ -8,7 +8,6 @@ const PortfolioSlide = (props) => {
   const { animation, transitionEnd } = props;
   const { title, backgroundImage } = props.data;
   const { about, stack, features, moreInfo } = props.data.info;
-  console.log(about);
   return (
     <div className={`slide ${animation}`} onTransitionEnd={transitionEnd}>
       <h1 className="slide-title">{title}</h1>

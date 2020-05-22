@@ -34,6 +34,16 @@
     &::placeholder {
       color: white;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active,
+    &:-internal-autofill-selected {
+      box-shadow: 0 0 0px 30px #5c9ead inset;
+      -webkit-box-shadow: 0 0 0px 30px #5c9ead inset;
+      -webkit-text-fill-color: #fff !important;
+    }
   }
 
   textarea {
@@ -46,7 +56,7 @@
   }
 
   input[type="submit"] {
-    width: 102%;
+    width: 101.5%;
     height: 40px;
     transition: background-color 0.5s ease;
 
