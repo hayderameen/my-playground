@@ -9,23 +9,38 @@ const Footer = () => {
     <section id="footer">
       <div id="contact-form-footer">
         <div className="social-icons">
+          <h1 id="social-icons-heading-footer">
+            My Socials <span>try hovering on 'em</span>
+          </h1>
           <SocialIcon
-            bg="fb"
+            customClass="fb"
+            title="Facebook"
             link={() => {
-              window.location = "https://fb.com/HayderAmeen";
+              window.open("https://fb.com/HayderAmeen", "_blank");
             }}
           />
           <SocialIcon
-            bg="twitter"
+            customClass="twitter"
+            title="Twitter"
             link={() => {
-              window.location = "https://twitter.com/hayder204";
+              window.open("https://twitter.com/hayder204", "_blank");
             }}
           />
           <SocialIcon
-            bg="linkedIn"
+            customClass="linkedin"
+            title="LinkedIn"
             link={() => {
-              window.location =
-                "https://www.linkedin.com/in/hayder-ameen-b8286375/";
+              window.open(
+                "https://www.linkedin.com/in/hayder-ameen-b8286375/",
+                "_blank"
+              );
+            }}
+          />
+          <SocialIcon
+            customClass="github"
+            title="GitHub"
+            link={() => {
+              window.open("https://github.com/hayderameen/", "_blank");
             }}
           />
         </div>
