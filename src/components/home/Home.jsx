@@ -23,7 +23,7 @@ class Home extends Component {
 
   componentDidMount() {
     window.addEventListener("keydown", this.handlePageScroll);
-    window.addEventListener("wheel", this.handlePageScrollWheel);
+    // window.addEventListener("wheel", this.handlePageScrollWheel);
   }
 
   scrollUp = (currentSection) => {
