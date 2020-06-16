@@ -9,7 +9,7 @@ import "../../css/home/homeVectors.css";
 const HomeVectors = () => {
   return (
     <React.Fragment>
-      <img id="picture-cover-vector" src={pictureCover} alt="vector"></img>
+      {/* <img id="picture-cover-vector" src={pictureCover} alt="vector"></img> */}
       <div id="superpowers-line-right"></div>
     </React.Fragment>
   );

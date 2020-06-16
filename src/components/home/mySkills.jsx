@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+// Importing graphics
+import triangle from "../../assets/home/myskills/triangle-bottom.svg";
+
 // Importing CSS
 import "../../css/home/mySkills.css";
 
@@ -35,6 +38,7 @@ class MySkills extends Component {
   render() {
     return (
       <section id="my-skills-cover" onScroll={this.onScroll}>
+        <img src={triangle} alt="graphic" id="skills-triangle" />
         <h1 id="my-skills-heading">My Skills</h1>
         <div className={`${this.state.showTicker} ticker`} id="ticker1">
           <h1>Responsive Web Design</h1>

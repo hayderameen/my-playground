@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 
 // Importing assets
 import profile from "../../assets/home/cover/profile.png";
+import triangle from "../../assets/home/cover/triangle-top.svg";
 
 // Importing CSS
 import "../../css/home/cover.css";
@@ -77,6 +78,7 @@ class Cover extends Component {
           src={profile}
           alt="Muhammad Haider Amin"
         ></img>
+        <img src={triangle} alt="graphic" id="cover-triangle" />
         <nav>
           <Link className="logo navigation-item" to="/">
             M. Haider Amin

@@ -15,6 +15,13 @@
   transform: rotate(-24deg);
 }
 
+#skills-triangle {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  margin-top: -2px;
+}
+
 .ticker {
   height: 15%;
   position: absolute;
